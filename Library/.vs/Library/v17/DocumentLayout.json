@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projekty\\Library\\Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|D:\\Projekty\\Library\\Library\\Library\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|solutionrelative:Library\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|D:\\Projekty\\Library\\Library\\Library\\Librarian.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|solutionrelative:Library\\Librarian.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|D:\\Projekty\\Library\\Library\\Library\\Librarian.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|solutionrelative:Library\\Librarian.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|D:\\Projekty\\Library\\Library\\Library\\Library.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|solutionrelative:Library\\Library.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|D:\\Projekty\\Library\\Library\\Library\\Library.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|solutionrelative:Library\\Library.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|D:\\Projekty\\Library\\Library\\LIBRARY\\ENUMS.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|solutionrelative:LIBRARY\\ENUMS.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|D:\\Projekty\\Library\\Library\\Library\\ShortFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|solutionrelative:Library\\ShortFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|D:\\Projekty\\Library\\Library\\Library\\ShortFunctions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E82B2261-7814-46CB-9EB5-383F60E69FC2}|Library\\Library.vcxproj|solutionrelative:Library\\ShortFunctions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enums.hpp",
+              "DocumentMoniker": "D:\\Projekty\\Library\\Library\\Library\\Enums.hpp",
+              "RelativeDocumentMoniker": "Library\\Enums.hpp",
+              "ToolTip": "D:\\Projekty\\Library\\Library\\Library\\Enums.hpp",
+              "RelativeToolTip": "Library\\Enums.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-21T11:22:05.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Projekty\\Library\\Library\\Library\\main.cpp",
+              "RelativeDocumentMoniker": "Library\\main.cpp",
+              "ToolTip": "D:\\Projekty\\Library\\Library\\Library\\main.cpp",
+              "RelativeToolTip": "Library\\main.cpp",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAqwC0BAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-06T17:45:59.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Librarian.cpp",
+              "DocumentMoniker": "D:\\Projekty\\Library\\Library\\Library\\Librarian.cpp",
+              "RelativeDocumentMoniker": "Library\\Librarian.cpp",
+              "ToolTip": "D:\\Projekty\\Library\\Library\\Library\\Librarian.cpp",
+              "RelativeToolTip": "Library\\Librarian.cpp",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-17T14:20:49.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Librarian.hpp",
+              "DocumentMoniker": "D:\\Projekty\\Library\\Library\\Library\\Librarian.hpp",
+              "RelativeDocumentMoniker": "Library\\Librarian.hpp",
+              "ToolTip": "D:\\Projekty\\Library\\Library\\Library\\Librarian.hpp",
+              "RelativeToolTip": "Library\\Librarian.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-17T14:20:33.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Library.cpp",
+              "DocumentMoniker": "D:\\Projekty\\Library\\Library\\Library\\Library.cpp",
+              "RelativeDocumentMoniker": "Library\\Library.cpp",
+              "ToolTip": "D:\\Projekty\\Library\\Library\\Library\\Library.cpp",
+              "RelativeToolTip": "Library\\Library.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-06T19:01:04.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Library.hpp",
+              "DocumentMoniker": "D:\\Projekty\\Library\\Library\\Library\\Library.hpp",
+              "RelativeDocumentMoniker": "Library\\Library.hpp",
+              "ToolTip": "D:\\Projekty\\Library\\Library\\Library\\Library.hpp",
+              "RelativeToolTip": "Library\\Library.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-06T18:44:45.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShortFunctions.cpp",
+              "DocumentMoniker": "D:\\Projekty\\Library\\Library\\Library\\ShortFunctions.cpp",
+              "RelativeDocumentMoniker": "Library\\ShortFunctions.cpp",
+              "ToolTip": "D:\\Projekty\\Library\\Library\\Library\\ShortFunctions.cpp",
+              "RelativeToolTip": "Library\\ShortFunctions.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-06T18:39:03.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShortFunctions.hpp",
+              "DocumentMoniker": "D:\\Projekty\\Library\\Library\\Library\\ShortFunctions.hpp",
+              "RelativeDocumentMoniker": "Library\\ShortFunctions.hpp",
+              "ToolTip": "D:\\Projekty\\Library\\Library\\Library\\ShortFunctions.hpp",
+              "RelativeToolTip": "Library\\ShortFunctions.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-06T18:12:15.323Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

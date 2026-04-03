@@ -1,0 +1,5 @@
+﻿  Librarian.cpp
+  main.cpp
+  Generowanie kodu...
+x64\Debug\ShortFunctions.obj : warning LNK4042: obiekt określono więcej niż raz; dodatkowe wystąpienia zostały zignorowane
+  Library.vcxproj -> D:\Projekty\Library\Library\x64\Debug\Library.exe
