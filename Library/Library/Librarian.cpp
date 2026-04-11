@@ -8,35 +8,39 @@ void Librarian::printLibrarianData()
 		<< "\nID: " << this->mID << std::endl;
 }
 
-Book Librarian::createBookRecord(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title, int p_BooksAmount)
+Book Librarian::createBookRecord(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title)
 {
 	Book tempBook{};
 
 	tempBook.authorsName = p_AuthorsName;
 	tempBook.authorsSurname = p_AuthorsSurname;
 	tempBook.title = p_Title;
-	tempBook.booksAmount = p_BooksAmount;
 
 	return tempBook;
 }
 
-void Librarian::addBook(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title, std::vector<Book>& p_Books)
+void Librarian::addBook(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title, std::vector<std::vector<Book>>& p_Books)
 {
+	std::vector<Book> tempVector;
 	if (p_Books.empty())
 	{
-		p_Books.push_back(createBookRecord(p_AuthorsSurname, p_AuthorsName, p_Title, 1));
+		
+		tempVector.push_back(createBookRecord(p_AuthorsSurname, p_AuthorsName, p_Title));
+		p_Books.push_back(tempVector);
 	}
 	else
 	{
-		for (auto& book : p_Books)
+		for (auto& oneTypeBookVector : p_Books)
 		{
-			if (book.authorsSurname == p_AuthorsSurname && book.authorsName == p_AuthorsName && book.title == p_Title)
+			if (oneTypeBookVector[0].authorsSurname == p_AuthorsSurname && oneTypeBookVector[0].authorsName == p_AuthorsName && oneTypeBookVector[0].title == p_Title)
 			{
-				book.booksAmount++;
+				oneTypeBookVector.push_back(createBookRecord(p_AuthorsSurname, p_AuthorsName, p_Title));
 				return;
 			}
+
 		}
-		p_Books.push_back(createBookRecord(p_AuthorsSurname, p_AuthorsName, p_Title, 1));
+		tempVector.push_back(createBookRecord(p_AuthorsSurname, p_AuthorsName, p_Title));
+		p_Books.push_back(tempVector);
 	}
 }
 

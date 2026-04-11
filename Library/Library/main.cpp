@@ -300,10 +300,8 @@ int main()
 					adam.getBookData(inputSurname, inputName, inputTitle, inputAmount);
 					for (int i = 0; i < inputAmount; i++)
 					{
-						adam.addBook(inputSurname, inputName, inputTitle, biblio.getLibraryBooks());//nie dziala dodawnie
+						adam.addBook(inputSurname, inputName, inputTitle, biblio.getLibraryBooks());
 					}
-					
-
 				}
 				if (librarianChoice == LibrarianChoice::PRINT_BOOKS)
 				{

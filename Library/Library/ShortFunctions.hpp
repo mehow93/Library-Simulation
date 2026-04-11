@@ -6,7 +6,7 @@ struct Book
 	std::string title = "";
 	std::string authorsName = "";
 	std::string authorsSurname = "";
-	int booksAmount = 0;
+	bool isBorrowed = false;
 };
 
 void showMenu();

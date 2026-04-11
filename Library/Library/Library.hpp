@@ -10,10 +10,11 @@ class Library
 {
 	public:
 		void printAllBooks();
-		void addBook(Book p_Book);
-		std::vector<Book>& getLibraryBooks() { return mBooks; };
+		//void addBook(Book p_Book);
+		std::vector<std::vector<Book>>& getLibraryBooks() { return mBooks; };
 	private:
-		std::vector<Book> mBooks;
+		std::vector<std::vector<Book>> mBooks;
+		int countOnlyAvaliableBooks(const std::vector<Book>& oneTypeBook);
 		
 
 };
