@@ -22,6 +22,7 @@ Book Librarian::createBookRecord(std::string p_AuthorsSurname, std::string p_Aut
 void Librarian::addBook(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title, std::vector<std::vector<Book>>& p_Books)
 {
 	std::vector<Book> tempVector;
+	tempVector.reserve(1);
 	if (p_Books.empty())
 	{
 		
@@ -37,7 +38,6 @@ void Librarian::addBook(std::string p_AuthorsSurname, std::string p_AuthorsName,
 				oneTypeBookVector.push_back(createBookRecord(p_AuthorsSurname, p_AuthorsName, p_Title));
 				return;
 			}
-
 		}
 		tempVector.push_back(createBookRecord(p_AuthorsSurname, p_AuthorsName, p_Title));
 		p_Books.push_back(tempVector);

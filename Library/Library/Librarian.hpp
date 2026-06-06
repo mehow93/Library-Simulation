@@ -17,6 +17,7 @@ class Librarian
 		Book createBookRecord(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title);
 		void getBookData(std::string& p_AuthorsSurname, std::string& p_AuthorsName, std::string& p_Title, int& p_Amount);
 		void addBook(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title, std::vector<std::vector<Book>>& p_Books);
+		int getID() { return mID; };
 	private:
 		std::string mName;
 		std::string mSurname;
