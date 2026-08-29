@@ -3,9 +3,9 @@
 
 struct Book
 {
-	std::string title = "";
-	std::string authorsName = "";
-	std::string authorsSurname = "";
+	std::string title {};
+	std::string authorsName {};
+	std::string authorsSurname {};
 	bool isBorrowed = false;
 };
 

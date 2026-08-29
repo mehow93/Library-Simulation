@@ -10,32 +10,34 @@ class LibrarianTest : public testing::Test
 
 TEST_F(LibrarianTest, defaultConstrTest)
 {
-    testing::internal::CaptureStdout();
-    
-
-    m_testLibrarian.printLibrarianData();
-    std::string output = testing::internal::GetCapturedStdout();
-    ASSERT_STREQ(output.c_str(), "Imie: Adam\nNazwisko: Nowak\nID: 1\n");
+    ASSERT_EQ("Adam", m_testLibrarian.getName());
+    ASSERT_EQ("Nowak", m_testLibrarian.getSurname());
 }
 
-TEST_F(LibrarianTest, customConstrTest)
-{
-    testing::internal::CaptureStdout();
-    Librarian testLibrarian("Czesiek","Kowalski");
 
-    testLibrarian.printLibrarianData();
-    std::string output = testing::internal::GetCapturedStdout();
-    EXPECT_THAT(output.c_str(), testing::HasSubstr("Imie: Czesiek\nNazwisko: Kowalski\n"));
+TEST_F(LibrarianTest, customNameTest)
+{
+    Librarian testLibrarian("Czesiek");
+
+    ASSERT_EQ("Czesiek", testLibrarian.getName());
+    ASSERT_EQ("Nowak", testLibrarian.getSurname());
+
+}
+
+TEST_F(LibrarianTest, customNameAndSurnameTest)
+{
+    Librarian testLibrarian("Zbyszek", "Poryszek");
+
+    ASSERT_EQ("Zbyszek", testLibrarian.getName());
+    ASSERT_EQ("Poryszek", testLibrarian.getSurname());
+
 }
 
 TEST_F(LibrarianTest, IDshouldBe2WhenTwoLibrariansWereCreated)
 {
-    testing::internal::CaptureStdout();
     Librarian testLibrarian("Jan", "Naj");
 
-    testLibrarian.printLibrarianData();
-    std::string output = testing::internal::GetCapturedStdout();
-    EXPECT_THAT(output.c_str(), testing::HasSubstr("ID: 2\n"));
+    ASSERT_EQ(2, testLibrarian.getID());
 }
 
 TEST_F(LibrarianTest, 2LibrariansInOneTestLastOneWithIDEq3)
@@ -50,11 +52,7 @@ TEST_F(LibrarianTest, 2LibrariansInOneTestLastOneWithIDEq3)
 
 TEST_F(LibrarianTest, CreateBookTest)
 {
-    Book modelBook;
-    modelBook.authorsSurname = "authorsSurname";
-    modelBook.authorsName = "authorsName";
-    modelBook.title = "Title";
-
+    Book modelBook = {"Title", "authorsName", "authorsSurname" };
     auto testBook = m_testLibrarian.createBookRecord("authorsSurname", "authorsName", "Title");
 
     ASSERT_FALSE(testBook.isBorrowed);
