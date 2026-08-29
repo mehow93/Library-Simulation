@@ -18,6 +18,8 @@ class Librarian
 		void getBookData(std::string& p_AuthorsSurname, std::string& p_AuthorsName, std::string& p_Title, int& p_Amount);
 		void addBook(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title, std::vector<std::vector<Book>>& p_Books);
 		int getID() { return mID; };
+		std::string getName() { return mName; };
+		std::string getSurname() { return mSurname; };
 	private:
 		std::string mName;
 		std::string mSurname;
