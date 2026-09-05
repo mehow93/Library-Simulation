@@ -6,6 +6,7 @@ class LibrarianTest : public testing::Test
 {
     protected:
         Librarian m_testLibrarian;
+        std::vector<std::vector<Book>> testBooksVector;
 };
 
 TEST_F(LibrarianTest, defaultConstrTest)
@@ -53,6 +54,7 @@ TEST_F(LibrarianTest, 2LibrariansInOneTestLastOneWithIDEq3)//przepisz ten test
 TEST_F(LibrarianTest, createBookTest)
 {
     Book modelBook = {"Title", "authorsSurname", "authorsName"};
+
     auto testBook = m_testLibrarian.createBookRecord("Title", "authorsSurname", "authorsName");
 
     ASSERT_FALSE(testBook.isBorrowed);
@@ -61,12 +63,65 @@ TEST_F(LibrarianTest, createBookTest)
     ASSERT_STREQ(modelBook.title.c_str(), testBook.title.c_str());
 }
 
-/*TEST_F(LibrarianTest, addBookTest_EmptyLibraryBooks)//consider mocking Library class and its function getLibraryBooks()
+TEST_F(LibrarianTest, addBookTest_EmptyLibraryBooks)//consider mocking Library class and its function getLibraryBooks()
 {
-    std::vector<std::vector<Book>> testBooksVector;
+    m_testLibrarian.addBook("testTitle", "testSurname", "testName", testBooksVector);
 
     ASSERT_EQ(1, testBooksVector.size());
     EXPECT_EQ(1, testBooksVector[0].size());
+
+}
+
+TEST_F(LibrarianTest, addBookTest_2SameBooks)
+{
+    m_testLibrarian.addBook("testTitle", "testSurname", "testName", testBooksVector);
     m_testLibrarian.addBook("testTitle", "testSurname", "testName", testBooksVector);
 
-}*/
+    ASSERT_EQ(1, testBooksVector.size());
+    EXPECT_EQ(2, testBooksVector[0].size());
+
+}
+
+TEST_F(LibrarianTest, addBookTest_2DifferentBooks)
+{
+    m_testLibrarian.addBook("testTitle", "testSurname", "testName", testBooksVector);
+    m_testLibrarian.addBook("testTitle1", "testSurname1", "testName1", testBooksVector);
+
+    ASSERT_EQ(2, testBooksVector.size());
+    ASSERT_EQ(1, testBooksVector[0].size());
+    EXPECT_EQ(1, testBooksVector[1].size());
+
+}
+
+TEST_F(LibrarianTest, addBookTest_2BooksDiffTitles)
+{
+    m_testLibrarian.addBook("testTitle", "testSurname", "testName", testBooksVector);
+    m_testLibrarian.addBook("testTitle1", "testSurname", "testName", testBooksVector);
+
+    ASSERT_EQ(2, testBooksVector.size());
+    ASSERT_EQ(1, testBooksVector[0].size());
+    EXPECT_EQ(1, testBooksVector[1].size());
+
+}
+
+TEST_F(LibrarianTest, addBookTest_2BooksDiffSurname)
+{
+    m_testLibrarian.addBook("testTitle", "testSurname", "testName", testBooksVector);
+    m_testLibrarian.addBook("testTitle", "testSurname1", "testName", testBooksVector);
+
+    ASSERT_EQ(2, testBooksVector.size());
+    ASSERT_EQ(1, testBooksVector[0].size());
+    EXPECT_EQ(1, testBooksVector[1].size());
+
+}
+
+TEST_F(LibrarianTest, addBookTest_2BooksDiffNames)
+{
+    m_testLibrarian.addBook("testTitle", "testSurname", "testName", testBooksVector);
+    m_testLibrarian.addBook("testTitle", "testSurname1", "testName1", testBooksVector);
+
+    ASSERT_EQ(2, testBooksVector.size());
+    ASSERT_EQ(1, testBooksVector[0].size());
+    EXPECT_EQ(1, testBooksVector[1].size());
+
+}
