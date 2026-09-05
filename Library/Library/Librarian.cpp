@@ -1,5 +1,6 @@
 #include "Librarian.hpp"
-int Librarian::mID = 0;
+
+int Librarian::mNextID = 0;
 
 void Librarian::printLibrarianData()
 {
@@ -8,25 +9,22 @@ void Librarian::printLibrarianData()
 		<< "\nID: " << this->mID << std::endl;
 }
 
-Book Librarian::createBookRecord(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title)
+Book Librarian::createBookRecord(std::string p_Title, std::string p_AuthorsSurname, std::string p_AuthorsName)
 {
-	Book tempBook{};
-
-	tempBook.authorsName = p_AuthorsName;
-	tempBook.authorsSurname = p_AuthorsSurname;
-	tempBook.title = p_Title;
-
+	std::cout << "We in function\n";
+	Book tempBook = { p_Title, p_AuthorsSurname, p_AuthorsName};
 	return tempBook;
 }
 
-void Librarian::addBook(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title, std::vector<std::vector<Book>>& p_Books)
+void Librarian::addBook(std::string p_Title, std::string p_AuthorsSurname,  std::string p_AuthorsName, std::vector<std::vector<Book>>& p_Books)
 {
 	std::vector<Book> tempVector;
 	tempVector.reserve(1);
+	std::cout << "\n\nWe in addBook()\n";
 	if (p_Books.empty())
 	{
-		
-		tempVector.push_back(createBookRecord(p_AuthorsSurname, p_AuthorsName, p_Title));
+		std::cout << "We in\n";
+		tempVector.push_back(createBookRecord(p_Title, p_AuthorsSurname, p_AuthorsName));
 		p_Books.push_back(tempVector);
 	}
 	else

@@ -9,12 +9,9 @@
 class Librarian
 {
 	public:
-		Librarian(std::string p_Name = "Adam", std::string p_Surname = "Nowak") : mName(p_Name), mSurname(p_Surname)
-		{
-			mID++;
-		}
+		Librarian(std::string p_Name = "Adam", std::string p_Surname = "Nowak") : mName(p_Name), mSurname(p_Surname), mID(++mNextID) {};
 		void printLibrarianData();
-		Book createBookRecord(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title);
+		Book createBookRecord(std::string p_Title, std::string p_AuthorsSurname, std::string p_AuthorsName);
 		void getBookData(std::string& p_AuthorsSurname, std::string& p_AuthorsName, std::string& p_Title, int& p_Amount);
 		void addBook(std::string p_AuthorsSurname, std::string p_AuthorsName, std::string p_Title, std::vector<std::vector<Book>>& p_Books);
 		int getID() { return mID; };
@@ -23,7 +20,8 @@ class Librarian
 	private:
 		std::string mName;
 		std::string mSurname;
-		static int mID;
+		int mID;
+		static int mNextID;
 
 
 
