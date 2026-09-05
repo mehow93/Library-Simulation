@@ -41,7 +41,7 @@ TEST_F(LibrarianTest, IDshouldBe2WhenTwoLibrariansWereCreated)
     ASSERT_EQ(2, testLibrarian.getID());
 }
 
-TEST_F(LibrarianTest, 2LibrariansInOneTestLastOneWithIDEq3)//przepisz ten test
+TEST_F(LibrarianTest, 2LibrariansInOneTestLastOneWithIDEq3)
 {
     Librarian testLibrarian2("Jan", "Naj");
     Librarian testLibrarian3("Ola", "Cola");

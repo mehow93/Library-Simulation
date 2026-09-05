@@ -11,7 +11,6 @@ void Librarian::printLibrarianData()
 
 Book Librarian::createBookRecord(std::string p_Title, std::string p_AuthorsSurname, std::string p_AuthorsName)
 {
-	std::cout << "We in function\n";
 	Book tempBook = { p_Title, p_AuthorsSurname, p_AuthorsName};
 	return tempBook;
 }
@@ -20,10 +19,9 @@ void Librarian::addBook(std::string p_Title, std::string p_AuthorsSurname,  std:
 {
 	std::vector<Book> tempVector;
 	tempVector.reserve(1);
-	std::cout << "\n\nWe in addBook()\n";
+
 	if (p_Books.empty())
 	{
-		std::cout << "We in\n";
 		tempVector.push_back(createBookRecord(p_Title, p_AuthorsSurname, p_AuthorsName));
 		p_Books.push_back(tempVector);
 	}
